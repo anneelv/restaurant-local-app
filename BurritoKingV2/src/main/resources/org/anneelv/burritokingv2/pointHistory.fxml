@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="580.0" style="-fx-background-color: FFF3D6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.anneelv.burritokingv2.Controllers.PointHistoryController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="210.0" layoutY="10.0" text="Points History">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="450.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="23.0" text="Collected Points: ">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="392.0" text="*Points are accumulated for all &quot;Collected&quot; orders">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="pointHistoryTable" layoutX="32.0" layoutY="66.0" prefHeight="299.0" prefWidth="515.0">
+              <columns>
+                <TableColumn fx:id="orderIDCol" prefWidth="56.0" text="Order ID" />
+                <TableColumn fx:id="orderDateCol" prefWidth="94.0" text="Order Date" />
+                  <TableColumn fx:id="orderTimeCol" prefWidth="92.0" text="Order Time" />
+                  <TableColumn fx:id="totalPriceCol" prefWidth="87.0" text="Total Price" />
+                  <TableColumn fx:id="pointsUsedCol" prefWidth="84.0" text="Points Used" />
+                  <TableColumn fx:id="pointsCollectedCol" prefWidth="96.0" text="Points Collected" />
+              </columns>
+            </TableView>
+            <Label fx:id="collectedPointLabel" layoutX="167.0" layoutY="23.0" prefHeight="19.0" prefWidth="40.0">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="411.0" text="*$1 = 1 point accumulated">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="373.0" text="*Highlighted rows are orders that are yet &quot;Collected&quot; but points used in the order">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

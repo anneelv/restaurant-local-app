@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.anneelv.burritokingv2.Controllers.SignupController">
+    <left>
+        <AnchorPane prefHeight="325.0" prefWidth="200.0" style="-fx-background-color: ffce60;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="161.0" fitWidth="160.0" layoutX="20.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/BurritoKingLogo.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="17.0" layoutY="31.0" text="Burrito King">
+                    <font>
+                        <Font name="Georgia Bold Italic" size="25.0" />
+                    </font>
+                </Label>
+                <Button layoutX="26.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #393e41;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="325.0" prefWidth="420.0" style="-fx-background-color: FFF3D6;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="90.0" layoutY="308.0" mnemonicParsing="false" onAction="#registerBtnOnAction" prefHeight="38.0" prefWidth="240.0" style="-fx-background-color: #ffce60;" text="Register">
+                    <font>
+                        <Font name="Georgia Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Label layoutX="46.0" layoutY="84.0" text="First name">
+                    <font>
+                        <Font name="Georgia Italic" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="firstnameTF" layoutX="140.0" layoutY="79.0" prefHeight="29.0" prefWidth="215.0" promptText="First name">
+                    <font>
+                        <Font name="Georgia" size="15.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="47.0" layoutY="129.0" text="Last name">
+                    <font>
+                        <Font name="Georgia Italic" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="lastnameTF" layoutX="140.0" layoutY="124.0" prefHeight="29.0" prefWidth="215.0" promptText="Last name">
+                    <font>
+                        <Font name="Georgia" size="15.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="signupMessage" alignment="CENTER" layoutX="37.0" layoutY="278.0" prefHeight="19.0" prefWidth="352.0" textFill="RED">
+                    <font>
+                        <Font name="Georgia Italic" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="167.0" layoutY="32.0" text="SIGNUP">
+                    <font>
+                        <Font name="Georgia Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+            <Label layoutX="47.0" layoutY="173.0" text="Username">
+               <font>
+                  <Font name="Georgia Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTF" layoutX="140.0" layoutY="168.0" prefHeight="29.0" prefWidth="215.0" promptText="Username">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="217.0" text="Password">
+               <font>
+                  <Font name="Georgia Italic" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="140.0" layoutY="212.0" prefHeight="29.0" prefWidth="215.0" promptText="Password">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </PasswordField>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

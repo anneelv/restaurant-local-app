@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="780.0" style="-fx-background-color: FFF3D6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.anneelv.burritokingv2.Controllers.CheckoutController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="780.0" style="-fx-background-color: D3D8C0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="280.0" layoutY="12.0" text="ORDER CHECKOUT">
+               <font>
+                  <Font name="Georgia Bold Italic" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="780.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="780.0">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="780.0">
+                     <children>
+                        <Label layoutX="70.0" layoutY="15.0" text="Item List:">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="500.0" layoutY="15.0" prefHeight="19.0" prefWidth="70.0" text="Quantity">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="650.0" layoutY="15.0" text="Total Price">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="780.0" style="-fx-background-color: FFEDC2;">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="780.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="167.0" layoutX="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Burrito.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="200.0" layoutY="27.0" text="Burrito">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="burritoQuantityLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="27.0" prefHeight="19.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="burritoPriceLabel" layoutX="665.0" layoutY="27.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="780.0" style="-fx-background-color: FFEDC2;">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="780.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="167.0" layoutX="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Fries.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="200.0" layoutY="25.0" text="Fries">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="friesQuantityLabel" alignment="CENTER" layoutX="500.0" layoutY="25.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="friesPriceLabel" layoutX="665.0" layoutY="25.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: FFEDC2;">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="780.0">
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="167.0" layoutX="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Soda.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="200.0" layoutY="25.0" text="Soda">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sodaQuantityLabel" alignment="CENTER" layoutX="500.0" layoutY="25.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sodaPriceLabel" layoutX="665.0" layoutY="25.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="780.0" style="-fx-background-color: FFEDC2;">
+               <children>
+                  <AnchorPane prefHeight="80.0" prefWidth="780.0">
+                     <children>
+                        <ImageView fx:id="mealImage" fitHeight="70.0" fitWidth="167.0" layoutX="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/Meal.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mealNameLabel" layoutX="200.0" layoutY="32.0" text="Meal">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mealQuantityLabel" alignment="CENTER" layoutX="500.0" layoutY="32.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mealPriceLabel" layoutX="665.0" layoutY="32.0" prefWidth="70.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="130.0" prefWidth="780.0">
+               <children>
+                  <AnchorPane prefHeight="100.0" prefWidth="780.0">
+                     <children>
+                        <Button layoutX="624.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkoutBtnOnAction" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: #393e41;" text="Checkout" textFill="WHITE">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="43.0" layoutY="65.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="38.0" prefWidth="130.0" style="-fx-background-color: #393e41;" text="Back" textFill="WHITE">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="totalPriceLabel" layoutX="659.0" layoutY="14.0" prefWidth="60.0" text="Price">
+                           <font>
+                              <Font name="Georgia Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="16.0" text="Waiting time (minutes): ">
+                           <font>
+                              <Font name="Georgia Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="waitingTimeLabel" layoutX="261.0" layoutY="16.0" prefHeight="19.0" prefWidth="60.0">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

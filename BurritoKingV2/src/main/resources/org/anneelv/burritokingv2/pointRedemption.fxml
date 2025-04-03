@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="550.0" style="-fx-background-color: FFF3D6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.anneelv.burritokingv2.Controllers.PointRedemptionController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: ffce60;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="157.0" layoutY="10.0" text="Point Redemption">
+               <font>
+                  <Font name="Georgia Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="250.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="59.0" layoutY="26.0" text="Available points: ">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="availPointsLabel" layoutX="228.0" layoutY="26.0" prefHeight="19.0" prefWidth="50.0">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="54.0" text="Order Total Price: ">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPriceLabel" layoutX="228.0" layoutY="54.0" prefHeight="19.0" prefWidth="50.0">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="94.0" text="Points to redeem: ">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="redeemPointTF" layoutX="228.0" layoutY="89.0" prefHeight="29.0" prefWidth="80.0" promptText="100">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="188.0" layoutY="208.0" mnemonicParsing="false" onAction="#redeemBtnOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #393e41;" text="Redeem" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="76.0" layoutY="172.0" prefHeight="19.0" prefWidth="400.0" textFill="RED">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="121.0" prefHeight="19.0" prefWidth="414.0" text="*Please enter the number of points (multiplies of 50 or 100)">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
